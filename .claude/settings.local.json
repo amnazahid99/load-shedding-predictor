@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "PowerShell(Get-NetTCPConnection *)",
+      "Bash(tasklist)",
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(npm ls *)",
+      "Bash(python -c \"import xgboost; import fastapi; import joblib; print\\('Dependencies OK'\\)\")",
+      "Bash(python src/features.py)",
+      "Bash(python -c \"from src.train import train_model; train_model\\('data/processed/processed_data.csv', 'artifacts/final_model.joblib'\\)\")",
+      "Bash(.venv/Scripts/pip install *)",
+      "Bash(.venv/Scripts/python.exe -c \"from src.features import ZONE_MAPPING; print\\(ZONE_MAPPING\\)\")",
+      "Bash(\"/c/Program Files/Python312/python.exe\" -m uvicorn src.main:app --host 0.0.0.0 --port 8000)",
+      "Bash(curl -s -X POST http://localhost:8000/predict -H \"Content-Type: application/json\" -d '{\"zone\": \"Gulberg\", \"date\": \"2025-04-15\", \"temperature\": 25}')",
+      "Bash(pkill -f uvicorn)",
+      "Bash(taskkill //F //IM python.exe)",
+      "Bash(\"/c/Program Files/Python312/python.exe\" -m uvicorn backend.main:app --host 0.0.0.0 --port 8000)"
+    ]
+  }
+}
