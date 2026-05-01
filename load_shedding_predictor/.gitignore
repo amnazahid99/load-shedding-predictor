@@ -65,10 +65,11 @@ yarn.lock
 
 # claude files
 .claude/
+load_shedding_predictor\.claude
 
-# readme files
-README.md
-
+# skills file
+skills.md
+load_shedding_predictor\skills.md
 
 # Jupyter
 .ipynb_checkpoints/
